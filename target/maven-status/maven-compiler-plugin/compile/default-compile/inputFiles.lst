@@ -1,26 +1,26 @@
-/mnt/c/ITB/Informatika/4th/Stima/TUCIL 3/project/Tucil3_13524032/src/algorithm/Heuristic.java
-/mnt/c/ITB/Informatika/4th/Stima/TUCIL 3/project/Tucil3_13524032/src/controller/AppController.java
-/mnt/c/ITB/Informatika/4th/Stima/TUCIL 3/project/Tucil3_13524032/src/model/Direction.java
-/mnt/c/ITB/Informatika/4th/Stima/TUCIL 3/project/Tucil3_13524032/src/view/MenuView.java
-/mnt/c/ITB/Informatika/4th/Stima/TUCIL 3/project/Tucil3_13524032/src/view/SidebarView.java
-/mnt/c/ITB/Informatika/4th/Stima/TUCIL 3/project/Tucil3_13524032/src/model/Tile.java
-/mnt/c/ITB/Informatika/4th/Stima/TUCIL 3/project/Tucil3_13524032/src/algorithm/PriorityQueueNode.java
-/mnt/c/ITB/Informatika/4th/Stima/TUCIL 3/project/Tucil3_13524032/src/view/ResultView.java
-/mnt/c/ITB/Informatika/4th/Stima/TUCIL 3/project/Tucil3_13524032/src/model/PuzzleGrid.java
-/mnt/c/ITB/Informatika/4th/Stima/TUCIL 3/project/Tucil3_13524032/src/view/MainApp.java
-/mnt/c/ITB/Informatika/4th/Stima/TUCIL 3/project/Tucil3_13524032/src/model/SolutionPath.java
-/mnt/c/ITB/Informatika/4th/Stima/TUCIL 3/project/Tucil3_13524032/src/view/PuzzleView.java
-/mnt/c/ITB/Informatika/4th/Stima/TUCIL 3/project/Tucil3_13524032/src/controller/PlaybackController.java
-/mnt/c/ITB/Informatika/4th/Stima/TUCIL 3/project/Tucil3_13524032/src/util/GridValidator.java
-/mnt/c/ITB/Informatika/4th/Stima/TUCIL 3/project/Tucil3_13524032/src/controller/SolverController.java
-/mnt/c/ITB/Informatika/4th/Stima/TUCIL 3/project/Tucil3_13524032/src/algorithm/SlideMechanics.java
-/mnt/c/ITB/Informatika/4th/Stima/TUCIL 3/project/Tucil3_13524032/src/view/PlaybackView.java
-/mnt/c/ITB/Informatika/4th/Stima/TUCIL 3/project/Tucil3_13524032/src/model/State.java
-/mnt/c/ITB/Informatika/4th/Stima/TUCIL 3/project/Tucil3_13524032/src/algorithm/Solver.java
-/mnt/c/ITB/Informatika/4th/Stima/TUCIL 3/project/Tucil3_13524032/src/algorithm/GBFS.java
-/mnt/c/ITB/Informatika/4th/Stima/TUCIL 3/project/Tucil3_13524032/src/model/GameConfig.java
-/mnt/c/ITB/Informatika/4th/Stima/TUCIL 3/project/Tucil3_13524032/src/algorithm/AStar.java
-/mnt/c/ITB/Informatika/4th/Stima/TUCIL 3/project/Tucil3_13524032/src/util/FileParser.java
-/mnt/c/ITB/Informatika/4th/Stima/TUCIL 3/project/Tucil3_13524032/src/model/SearchResult.java
-/mnt/c/ITB/Informatika/4th/Stima/TUCIL 3/project/Tucil3_13524032/src/view/GridView.java
-/mnt/c/ITB/Informatika/4th/Stima/TUCIL 3/project/Tucil3_13524032/src/algorithm/UCS.java
+/mnt/c/ITB/Informatika/Backend/tes/Tucil3_13524032/src/controller/AppController.java
+/mnt/c/ITB/Informatika/Backend/tes/Tucil3_13524032/src/view/ResultView.java
+/mnt/c/ITB/Informatika/Backend/tes/Tucil3_13524032/src/model/SolutionPath.java
+/mnt/c/ITB/Informatika/Backend/tes/Tucil3_13524032/src/model/GameConfig.java
+/mnt/c/ITB/Informatika/Backend/tes/Tucil3_13524032/src/algorithm/Heuristic.java
+/mnt/c/ITB/Informatika/Backend/tes/Tucil3_13524032/src/model/Tile.java
+/mnt/c/ITB/Informatika/Backend/tes/Tucil3_13524032/src/util/GridValidator.java
+/mnt/c/ITB/Informatika/Backend/tes/Tucil3_13524032/src/view/SidebarView.java
+/mnt/c/ITB/Informatika/Backend/tes/Tucil3_13524032/src/view/GridView.java
+/mnt/c/ITB/Informatika/Backend/tes/Tucil3_13524032/src/algorithm/UCS.java
+/mnt/c/ITB/Informatika/Backend/tes/Tucil3_13524032/src/algorithm/SlideMechanics.java
+/mnt/c/ITB/Informatika/Backend/tes/Tucil3_13524032/src/view/PlaybackView.java
+/mnt/c/ITB/Informatika/Backend/tes/Tucil3_13524032/src/model/PuzzleGrid.java
+/mnt/c/ITB/Informatika/Backend/tes/Tucil3_13524032/src/algorithm/GBFS.java
+/mnt/c/ITB/Informatika/Backend/tes/Tucil3_13524032/src/controller/PlaybackController.java
+/mnt/c/ITB/Informatika/Backend/tes/Tucil3_13524032/src/controller/SolverController.java
+/mnt/c/ITB/Informatika/Backend/tes/Tucil3_13524032/src/view/PuzzleView.java
+/mnt/c/ITB/Informatika/Backend/tes/Tucil3_13524032/src/model/SearchResult.java
+/mnt/c/ITB/Informatika/Backend/tes/Tucil3_13524032/src/view/MenuView.java
+/mnt/c/ITB/Informatika/Backend/tes/Tucil3_13524032/src/util/FileParser.java
+/mnt/c/ITB/Informatika/Backend/tes/Tucil3_13524032/src/view/MainApp.java
+/mnt/c/ITB/Informatika/Backend/tes/Tucil3_13524032/src/algorithm/PriorityQueueNode.java
+/mnt/c/ITB/Informatika/Backend/tes/Tucil3_13524032/src/algorithm/Solver.java
+/mnt/c/ITB/Informatika/Backend/tes/Tucil3_13524032/src/model/Direction.java
+/mnt/c/ITB/Informatika/Backend/tes/Tucil3_13524032/src/algorithm/AStar.java
+/mnt/c/ITB/Informatika/Backend/tes/Tucil3_13524032/src/model/State.java

@@ -12,9 +12,7 @@ Program ini membutuhkan:
 
 ## Cara Mengompilasi Program
 
-Folder `target` hasil build Maven sudah disertakan pada repository, sehingga program dapat langsung dijalankan tanpa perlu melakukan kompilasi ulang.
-
-Jika folder `target` tidak ada, terhapus, atau ingin melakukan build ulang program, jalankan perintah berikut pada root project:
+Setelah melakukan `git clone`,  harus selalu menjalankan proses build terlebih dahulu pada root project:
 
 ```bash
 mvn clean package
@@ -26,13 +24,18 @@ Perintah tersebut akan:
 - membuat file `.jar` aplikasi,
 - menyalin dependency JavaFX runtime ke folder `target/lib`.
 
+Catatan:
+
+- Langkah `mvn clean package` wajib dijalankan setiap kali repository baru selesai di-clone.
+- Hal ini diperlukan agar isi folder `target` dan dependency JavaFX menyesuaikan sistem operasi dan environment pada device yang digunakan.
+
 ---
 
 ## Cara Menjalankan Program
 
 ### Windows
 
-Program dapat dijalankan dengan:
+Setelah `mvn clean package` selesai dijalankan, program dapat dijalankan dengan:
 
 ```powershell
 .\bin\ice-sliding-puzzle.bat
@@ -48,7 +51,7 @@ ice-sliding-puzzle.bat
 
 ### Linux / macOS
 
-Jalankan perintah berikut pada terminal:
+Setelah `mvn clean package` selesai dijalankan, jalankan perintah berikut pada terminal:
 
 ```bash
 chmod +x ./bin/ice-sliding-puzzle.sh
