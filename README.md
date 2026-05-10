@@ -92,14 +92,64 @@ Simbol penting:
 
 Contoh file input tersedia di folder `test`.
 
-## Struktur Folder Penting
+## Struktur Folder 
 
-- `src` : source code program
-- `src/resources` : file FXML, CSS, dan aset gambar
-- `test` : contoh file input
-- `bin` : launcher program untuk Windows dan Linux
-- `target` : hasil build Maven
-- `doc` : dokumentasi atau laporan
+```text
+.
+├── bin
+│   ├── ice-sliding-puzzle.sh
+│   └── ice-sliding-puzzle.bat
+│
+├── doc
+│   └── laporan.pdf
+│
+├── src
+│   ├── algorithm
+│   │   ├── AStar.java
+│   │   ├── GBFS.java
+│   │   ├── UCS.java
+│   │   ├── Heuristic.java
+│   │   └── SlideMechanics.java
+│   │
+│   ├── controller
+│   │   ├── AppController.java
+│   │   ├── PlaybackController.java
+│   │   └── SolverController.java
+│   │
+│   ├── model
+│   │   ├── Direction.java
+│   │   ├── PuzzleGrid.java
+│   │   ├── SearchResult.java
+│   │   ├── SolutionPath.java
+│   │   ├── State.java
+│   │   └── Tile.java
+│   │
+│   ├── resources
+│   │   ├── assets
+│   │   ├── css
+│   │   └── fxml
+│   │
+│   ├── util
+│   │   ├── FileParser.java
+│   │   ├── GridValidator.java
+│   │   └── SolutionWriter.java
+│   │
+│   └── view
+│       ├── MainApp.java
+│       ├── MenuView.java
+│       ├── PuzzleView.java
+│       └── PlaybackView.java
+│
+├── target
+│   ├── classes
+│   ├── lib
+│   └── ice-sliding-puzzle-1.0.0.jar
+│
+├── test 
+│
+├── pom.xml
+└── README.md
+```
 
 ## Author / Identitas Pembuat
 
