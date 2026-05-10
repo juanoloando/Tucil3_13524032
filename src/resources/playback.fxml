@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="view.PlaybackView"
+      styleClass="playback-container"
+      spacing="8">
+
+    <padding>
+        <Insets top="10" right="16" bottom="10" left="16"/>
+    </padding>
+
+    <HBox fx:id="controlBar" alignment="CENTER" spacing="10">
+        <Button text="|&lt;"
+                styleClass="btn-playback"
+                onAction="#onFirstClicked"
+                minWidth="36"/>
+
+        <Button text="&lt;"
+                styleClass="btn-playback"
+                onAction="#onPreviousClicked"
+                minWidth="36"/>
+
+        <Button fx:id="btnPlayPause"
+                text="Play"
+                styleClass="btn-play-pause"
+                onAction="#onPlayPauseClicked"
+                minWidth="90"/>
+
+        <Button text="&gt;"
+                styleClass="btn-playback"
+                onAction="#onNextClicked"
+                minWidth="36"/>
+
+        <Button text="&gt;|"
+                styleClass="btn-playback"
+                onAction="#onLastClicked"
+                minWidth="36"/>
+
+        <Region HBox.hgrow="ALWAYS"/>
+
+        <Label text="Speed:" styleClass="playback-label"/>
+        <Slider fx:id="sliderSpeed"
+                styleClass="speed-slider"
+                minWidth="120"
+                maxWidth="180"/>
+        <Label text="Slow" styleClass="playback-label-dim"/>
+    </HBox>
+
+    <HBox alignment="CENTER_LEFT" spacing="24">
+        <Label fx:id="lblStep"
+               text="Step: 0 / 0"
+               styleClass="step-label"/>
+
+        <Label fx:id="lblDirection"
+               text="Direction: -"
+               styleClass="playback-info-label"/>
+
+        <Label fx:id="lblStepCost"
+               text="Step Cost: -"
+               styleClass="playback-info-label"/>
+
+        <Label fx:id="lblCostSoFar"
+               text="Cost So Far: -"
+               styleClass="playback-info-label"/>
+
+        <Region HBox.hgrow="ALWAYS"/>
+        <Label text="Klik Esc untuk input step ke-i"
+               styleClass="keyboard-hint"
+               opacity="0.45"/>
+    </HBox>
+
+</VBox>

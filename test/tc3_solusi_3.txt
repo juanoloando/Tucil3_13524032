@@ -1,0 +1,38 @@
+Ice Sliding Puzzle - Solusi 
+Algoritma  : UCS
+Heuristik  : None
+Gerakan    : UR
+Total Cost : 33
+
+Initial
+XXXXXXX
+X***OXX
+X*X***X
+X*****X
+X*L***X
+XZ****X
+XXXXXXX
+
+Step 1 : U
+XXXXXXX
+XZ**OXX
+X*X***X
+X*****X
+X*L***X
+X*****X
+XXXXXXX
+
+Step 2 : R
+XXXXXXX
+X***ZXX
+X*X***X
+X*****X
+X*L***X
+X*****X
+XXXXXXX
+
+Statistik 
+Total Cost     : 33
+Banyak Iterasi : 5
+Waktu Eksekusi : 0.137 ms
+Jumlah Step    : 2

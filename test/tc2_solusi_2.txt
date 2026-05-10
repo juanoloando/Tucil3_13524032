@@ -1,0 +1,47 @@
+Ice Sliding Puzzle - Solusi 
+Algoritma  : GBFS
+Heuristik  : H2
+Gerakan    : RUR
+Total Cost : 33
+
+Initial
+XXXXXXX
+X***OXX
+X**1**X
+X*****X
+X*****X
+XZ*0X*X
+XXXXXXX
+
+Step 1 : R
+XXXXXXX
+X***OXX
+X**1**X
+X*****X
+X*****X
+X**ZX*X
+XXXXXXX
+
+Step 2 : U
+XXXXXXX
+X**ZOXX
+X*****X
+X*****X
+X*****X
+X***X*X
+XXXXXXX
+
+Step 3 : R
+XXXXXXX
+X***ZXX
+X*****X
+X*****X
+X*****X
+X***X*X
+XXXXXXX
+
+Statistik 
+Total Cost     : 33
+Banyak Iterasi : 4
+Waktu Eksekusi : 0.135 ms
+Jumlah Step    : 3

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="rootPane"
+           xmlns="http://javafx.com/javafx/21"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="view.MenuView"
+           prefWidth="1280" prefHeight="720"
+           styleClass="home-root">
+
+    <children>
+        <ImageView fx:id="backgroundImage" preserveRatio="false" smooth="true">
+            <image>
+                <Image url="@assets/backgroundhome.jpg" />
+            </image>
+        </ImageView>
+
+        <Pane styleClass="home-dark-overlay" mouseTransparent="true" />
+
+        <StackPane alignment="TOP_CENTER" mouseTransparent="true">
+            <padding>
+                <Insets top="34" />
+            </padding>
+            <ImageView fitWidth="365" preserveRatio="true" smooth="true">
+                <image>
+                    <Image url="@assets/welcome.png" />
+                </image>
+            </ImageView>
+        </StackPane>
+
+        <VBox alignment="CENTER" spacing="16" maxWidth="330" translateY="42">
+            <children>
+                <VBox alignment="CENTER" spacing="20" styleClass="home-menu-card">
+                    <padding>
+                        <Insets top="42" right="28" bottom="42" left="28" />
+                    </padding>
+
+                    <children>
+                        <StackPane styleClass="ice-control" onMouseClicked="#onBrowseClicked">
+                            <ImageView fitWidth="270" fitHeight="74" preserveRatio="false" smooth="true">
+                                <image>
+                                    <Image url="@assets/placeholder_strategi_heuristic.png" />
+                                </image>
+                            </ImageView>
+                            <Label fx:id="lblInputText" styleClass="menu-placeholder-text" />
+                        </StackPane>
+
+                        <StackPane styleClass="ice-control" onMouseClicked="#onAlgorithmClicked">
+                            <ImageView fitWidth="270" fitHeight="74" preserveRatio="false" smooth="true">
+                                <image>
+                                    <Image url="@assets/placeholder_strategi_heuristic.png" />
+                                </image>
+                            </ImageView>
+                            <Label fx:id="lblAlgorithmText" styleClass="menu-placeholder-text" />
+                        </StackPane>
+
+                        <StackPane styleClass="ice-control" onMouseClicked="#onHeuristicClicked">
+                            <ImageView fitWidth="270" fitHeight="74" preserveRatio="false" smooth="true">
+                                <image>
+                                    <Image url="@assets/placeholder_strategi_heuristic.png" />
+                                </image>
+                            </ImageView>
+                            <Label fx:id="lblHeuristicText" styleClass="menu-placeholder-text" />
+                        </StackPane>
+                    </children>
+                </VBox>
+
+                <StackPane styleClass="ice-generate" onMouseClicked="#onGenerateClicked">
+                    <ImageView fitWidth="250" preserveRatio="true" smooth="true">
+                        <image>
+                            <Image url="@assets/generate.png" />
+                        </image>
+                    </ImageView>
+                </StackPane>
+
+                <Label fx:id="lblError" styleClass="home-error-label" maxWidth="420" wrapText="true" />
+            </children>
+        </VBox>
+
+        <StackPane alignment="BOTTOM_RIGHT" mouseTransparent="true">
+            <padding>
+                <Insets right="150" bottom="18" />
+            </padding>
+            <ImageView fitHeight="430" preserveRatio="true" smooth="true">
+                <image>
+                    <Image url="@assets/jackfrost.png" />
+                </image>
+            </ImageView>
+        </StackPane>
+
+        <StackPane fx:id="popupOverlay" visible="false" managed="false" styleClass="popup-overlay">
+            <children>
+                <Pane styleClass="popup-backdrop" onMouseClicked="#onPopupBackdropClicked" />
+
+                <StackPane maxWidth="430" maxHeight="610" styleClass="ice-popup-box">
+                    <children>
+                        <ImageView fx:id="popupImage" fitWidth="410" preserveRatio="true" smooth="true" />
+
+                        <VBox alignment="CENTER" spacing="50" translateY="78">
+                            <children>
+                                <Label fx:id="popupOption1" styleClass="popup-option" onMouseClicked="#onPopupOption1Clicked" />
+                                <Label fx:id="popupOption2" styleClass="popup-option" onMouseClicked="#onPopupOption2Clicked" />
+                                <Label fx:id="popupOption3" styleClass="popup-option" onMouseClicked="#onPopupOption3Clicked" />
+                            </children>
+                        </VBox>
+                    </children>
+                </StackPane>
+            </children>
+        </StackPane>
+    </children>
+</StackPane>

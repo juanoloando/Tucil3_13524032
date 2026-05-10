@@ -1,0 +1,66 @@
+Ice Sliding Puzzle - Solusi 
+Algoritma  : UCS
+Heuristik  : None
+Gerakan    : RLDR
+Total Cost : 30
+
+Initial
+XXXXXXXXXXX
+XZ*0*****1X
+X*XXXXXXX*X
+X*********X
+X*XXXXXXX*X
+X*L*****L*X
+X*XXXXXXX*X
+X***2****OX
+XXXXXXXXXXX
+
+Step 1 : R
+XXXXXXXXXXX
+X********ZX
+X*XXXXXXX*X
+X*********X
+X*XXXXXXX*X
+X*L*****L*X
+X*XXXXXXX*X
+X***2****OX
+XXXXXXXXXXX
+
+Step 2 : L
+XXXXXXXXXXX
+XZ********X
+X*XXXXXXX*X
+X*********X
+X*XXXXXXX*X
+X*L*****L*X
+X*XXXXXXX*X
+X***2****OX
+XXXXXXXXXXX
+
+Step 3 : D
+XXXXXXXXXXX
+X*********X
+X*XXXXXXX*X
+X*********X
+X*XXXXXXX*X
+X*L*****L*X
+X*XXXXXXX*X
+XZ**2****OX
+XXXXXXXXXXX
+
+Step 4 : R
+XXXXXXXXXXX
+X*********X
+X*XXXXXXX*X
+X*********X
+X*XXXXXXX*X
+X*L*****L*X
+X*XXXXXXX*X
+X********ZX
+XXXXXXXXXXX
+
+Statistik 
+Total Cost     : 30
+Banyak Iterasi : 9
+Waktu Eksekusi : 0.235 ms
+Jumlah Step    : 4

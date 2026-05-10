@@ -1,0 +1,92 @@
+Ice Sliding Puzzle - Solusi 
+Algoritma  : A*
+Heuristik  : H2
+Gerakan    : RULUDRUR
+Total Cost : 87
+
+Initial
+XXXXXXX
+X0****X
+X**X**X
+X****OX
+X1***LX
+XZ**X*X
+XXXXXXX
+
+Step 1 : R
+XXXXXXX
+X0****X
+X**X**X
+X****OX
+X1***LX
+X**ZX*X
+XXXXXXX
+
+Step 2 : U
+XXXXXXX
+X0****X
+X**X**X
+X**Z*OX
+X1***LX
+X***X*X
+XXXXXXX
+
+Step 3 : L
+XXXXXXX
+X0****X
+X**X**X
+XZ***OX
+X1***LX
+X***X*X
+XXXXXXX
+
+Step 4 : U
+XXXXXXX
+XZ****X
+X**X**X
+X****OX
+X1***LX
+X***X*X
+XXXXXXX
+
+Step 5 : D
+XXXXXXX
+X*****X
+X**X**X
+X****OX
+X****LX
+XZ**X*X
+XXXXXXX
+
+Step 6 : R
+XXXXXXX
+X*****X
+X**X**X
+X****OX
+X****LX
+X**ZX*X
+XXXXXXX
+
+Step 7 : U
+XXXXXXX
+X*****X
+X**X**X
+X**Z*OX
+X****LX
+X***X*X
+XXXXXXX
+
+Step 8 : R
+XXXXXXX
+X*****X
+X**X**X
+X****ZX
+X****LX
+X***X*X
+XXXXXXX
+
+Statistik 
+Total Cost     : 87
+Banyak Iterasi : 13
+Waktu Eksekusi : 0.207 ms
+Jumlah Step    : 8

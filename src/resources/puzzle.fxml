@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import view.GridView?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="view.PuzzleView"
+      fx:id="rootPane"
+      styleClass="board-root"
+      focusTraversable="true"
+      maxWidth="Infinity"
+      maxHeight="Infinity">
+
+    <HBox styleClass="board-top-bar" alignment="CENTER_LEFT">
+        <padding>
+            <Insets top="10" right="18" bottom="10" left="18"/>
+        </padding>
+        <Label text="Ice Sliding Puzzle Solver" styleClass="board-top-title" HBox.hgrow="ALWAYS"/>
+    </HBox>
+
+    <HBox VBox.vgrow="ALWAYS" spacing="20" alignment="CENTER_LEFT" styleClass="board-content">
+        <padding>
+            <Insets top="18" right="24" bottom="18" left="70"/>
+        </padding>
+
+        <StackPane styleClass="board-card" HBox.hgrow="NEVER"
+                   prefWidth="720" prefHeight="720"
+                   minWidth="430" minHeight="430"
+                   maxWidth="820" maxHeight="820">
+            <GridView fx:id="gridCanvas"
+                      styleClass="grid-canvas-area"
+                      minHeight="380" minWidth="380"
+                      prefWidth="700" prefHeight="700"
+                      maxWidth="Infinity" maxHeight="Infinity"/>
+        </StackPane>
+
+        <Region HBox.hgrow="ALWAYS"/>
+
+        <VBox styleClass="board-sidebar"
+            minWidth="270"
+            prefWidth="310"
+            maxWidth="340"
+            spacing="12">
+            <fx:include fx:id="resultPanel" source="result_panel.fxml"/>
+            <Separator/>
+            <fx:include fx:id="sidebarPanel" source="sidebar_panel.fxml"/>
+        </VBox>
+    </HBox>
+
+    <fx:include fx:id="playbackPanel" source="playback.fxml"/>
+
+    <HBox styleClass="board-bottom-bar" alignment="CENTER_LEFT" spacing="12">
+        <padding>
+            <Insets top="10" right="18" bottom="10" left="18"/>
+        </padding>
+
+        <Button text="Simpan Solusi"
+                styleClass="btn-save"
+                onAction="#onSaveSolutionClicked"/>
+        <Button text="Simpan Statistik"
+                styleClass="btn-save"
+                onAction="#onSaveIterationsClicked"/>
+
+        <Region HBox.hgrow="ALWAYS"/>
+
+        <Button text="Kembali ke Menu Utama"
+                styleClass="btn-back"
+                onAction="#onBackToMenuClicked"/>
+    </HBox>
+
+</VBox>

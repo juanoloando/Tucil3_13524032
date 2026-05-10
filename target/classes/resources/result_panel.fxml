@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="view.ResultView"
+      spacing="8">
+
+    <Label text="Result" styleClass="result-header"/>
+
+    <VBox fx:id="resultContainer" spacing="8">
+        <Label fx:id="lblTotalCost" text="Total Cost: -" styleClass="result-value"/>
+        <Label fx:id="lblIterations" text="Banyak Iterasi: -" styleClass="result-value"/>
+        <Label fx:id="lblExecutionTime" text="Waktu Eksekusi: -" styleClass="result-value"/>
+        <Label text="Urutan Gerakan" styleClass="result-value"/>
+        <TextArea fx:id="txtSolutionMoves"
+                  editable="false"
+                  prefRowCount="4"
+                  wrapText="true"
+                  styleClass="result-solution-area"/>
+    </VBox>
+
+    <Label fx:id="lblNoSolution"
+           text="Solusi tidak ditemukan."
+           visible="false"
+           managed="false"
+           wrapText="true"
+           styleClass="no-solution-label"/>
+
+</VBox>

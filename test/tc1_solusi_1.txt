@@ -1,0 +1,66 @@
+Ice Sliding Puzzle - Solusi 
+Algoritma  : A*
+Heuristik  : H2
+Gerakan    : RDLR
+Total Cost : 30
+
+Initial
+XXXXXXXXXXX
+XZ*0*****1X
+X*XXXXXXX*X
+X*********X
+X*XXXXXXX*X
+X*L*****L*X
+X*XXXXXXX*X
+X***2****OX
+XXXXXXXXXXX
+
+Step 1 : R
+XXXXXXXXXXX
+X********ZX
+X*XXXXXXX*X
+X*********X
+X*XXXXXXX*X
+X*L*****L*X
+X*XXXXXXX*X
+X***2****OX
+XXXXXXXXXXX
+
+Step 2 : D
+XXXXXXXXXXX
+X*********X
+X*XXXXXXX*X
+X*********X
+X*XXXXXXX*X
+X*L*****L*X
+X*XXXXXXX*X
+X***2****ZX
+XXXXXXXXXXX
+
+Step 3 : L
+XXXXXXXXXXX
+X*********X
+X*XXXXXXX*X
+X*********X
+X*XXXXXXX*X
+X*L*****L*X
+X*XXXXXXX*X
+XZ*******OX
+XXXXXXXXXXX
+
+Step 4 : R
+XXXXXXXXXXX
+X*********X
+X*XXXXXXX*X
+X*********X
+X*XXXXXXX*X
+X*L*****L*X
+X*XXXXXXX*X
+X********ZX
+XXXXXXXXXXX
+
+Statistik 
+Total Cost     : 30
+Banyak Iterasi : 7
+Waktu Eksekusi : 2.242 ms
+Jumlah Step    : 4

@@ -1,0 +1,161 @@
+Ice Sliding Puzzle - Solusi 
+Algoritma  : A*
+Heuristik  : H2
+Gerakan    : RDRDLURDR
+Total Cost : 44
+
+Initial
+Z****0X*****X
+XX*XL**X**X*X
+***4****5X**X
+*XX*X**X**XXX
+L********1X*X
+*XX**XX***LXX
+XXL*XL*X***XX
+**X3*****2*XX
+XX****X**XXLX
+*XX**XXX**X*X
+XLXX*XXL*X**X
+X*X*XX*X***OX
+XXXXXXXXXXXXX
+
+Step 1 : R
+*****ZX*****X
+XX*XL**X**X*X
+***4****5X**X
+*XX*X**X**XXX
+L********1X*X
+*XX**XX***LXX
+XXL*XL*X***XX
+**X3*****2*XX
+XX****X**XXLX
+*XX**XXX**X*X
+XLXX*XXL*X**X
+X*X*XX*X***OX
+XXXXXXXXXXXXX
+
+Step 2 : D
+******X*****X
+XX*XL**X**X*X
+***4****5X**X
+*XX*X**X**XXX
+L****Z***1X*X
+*XX**XX***LXX
+XXL*XL*X***XX
+**X3*****2*XX
+XX****X**XXLX
+*XX**XXX**X*X
+XLXX*XXL*X**X
+X*X*XX*X***OX
+XXXXXXXXXXXXX
+
+Step 3 : R
+******X*****X
+XX*XL**X**X*X
+***4****5X**X
+*XX*X**X**XXX
+L********ZX*X
+*XX**XX***LXX
+XXL*XL*X***XX
+**X3*****2*XX
+XX****X**XXLX
+*XX**XXX**X*X
+XLXX*XXL*X**X
+X*X*XX*X***OX
+XXXXXXXXXXXXX
+
+Step 4 : D
+******X*****X
+XX*XL**X**X*X
+***4****5X**X
+*XX*X**X**XXX
+L*********X*X
+*XX**XX***LXX
+XXL*XL*X***XX
+**X3*****Z*XX
+XX****X**XXLX
+*XX**XXX**X*X
+XLXX*XXL*X**X
+X*X*XX*X***OX
+XXXXXXXXXXXXX
+
+Step 5 : L
+******X*****X
+XX*XL**X**X*X
+***4****5X**X
+*XX*X**X**XXX
+L*********X*X
+*XX**XX***LXX
+XXL*XL*X***XX
+**XZ*******XX
+XX****X**XXLX
+*XX**XXX**X*X
+XLXX*XXL*X**X
+X*X*XX*X***OX
+XXXXXXXXXXXXX
+
+Step 6 : U
+******X*****X
+XX*XL**X**X*X
+***Z****5X**X
+*XX*X**X**XXX
+L*********X*X
+*XX**XX***LXX
+XXL*XL*X***XX
+**X********XX
+XX****X**XXLX
+*XX**XXX**X*X
+XLXX*XXL*X**X
+X*X*XX*X***OX
+XXXXXXXXXXXXX
+
+Step 7 : R
+******X*****X
+XX*XL**X**X*X
+********ZX**X
+*XX*X**X**XXX
+L*********X*X
+*XX**XX***LXX
+XXL*XL*X***XX
+**X********XX
+XX****X**XXLX
+*XX**XXX**X*X
+XLXX*XXL*X**X
+X*X*XX*X***OX
+XXXXXXXXXXXXX
+
+Step 8 : D
+******X*****X
+XX*XL**X**X*X
+*********X**X
+*XX*X**X**XXX
+L*********X*X
+*XX**XX***LXX
+XXL*XL*X***XX
+**X********XX
+XX****X**XXLX
+*XX**XXX**X*X
+XLXX*XXL*X**X
+X*X*XX*XZ**OX
+XXXXXXXXXXXXX
+
+Step 9 : R
+******X*****X
+XX*XL**X**X*X
+*********X**X
+*XX*X**X**XXX
+L*********X*X
+*XX**XX***LXX
+XXL*XL*X***XX
+**X********XX
+XX****X**XXLX
+*XX**XXX**X*X
+XLXX*XXL*X**X
+X*X*XX*X***ZX
+XXXXXXXXXXXXX
+
+Statistik 
+Total Cost     : 44
+Banyak Iterasi : 10
+Waktu Eksekusi : 0.158 ms
+Jumlah Step    : 9
